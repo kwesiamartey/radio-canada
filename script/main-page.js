@@ -1,5 +1,5 @@
  let stationData = []; // Store stations here to avoid multiple fetches
-    let selectedCountryPath = localStorage.getItem('selectedCountryPath') || "unitedStateRadioList.json";
+    let selectedCountryPath = localStorage.getItem('selectedCountryPath') || "canadaRadioList.json";
 
     //let selectedCountryPath = '';
    const audio = new Audio();
@@ -14,7 +14,7 @@
     const stationListContent = document.getElementById('stationListContent');
     const countryList = document.getElementById('countryList');
 
-    const selectedCountryPathName = localStorage.getItem('selectedCountryPathName') || "USA";
+    const selectedCountryPathName = localStorage.getItem('selectedCountryPathName') || "Canada";
 
 
     async function loadStationPlaceholders() {
@@ -46,7 +46,7 @@
          .join('');
    }
 
-        /**
+     /**
      * Function to fetch and insert HTML content into a target element
      * @param {string} url - The URL of the HTML file to fetch
      * @param {string} targetId - The ID of the target element to inject content into
